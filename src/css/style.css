@@ -18,16 +18,23 @@ main{
     font-weight: 600;
 }
 
-a {
+.Enlaces{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 10px;
+    
+}
+
+.Enlaces a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
     color: #639fab;
 }
 
 a:hover{
     color: #1c5d99;
-}
-
-.Enlaces{
-    text-align: center;
 }
 
 .ficha-personaje{
@@ -73,15 +80,37 @@ a:hover{
     font-size: 18px;
 }
 
-
-
 .Comunidad {
     background-color: #1c5d99;
     display: block;
     width: 50%;
-    margin: auto;
-    padding: 10px;
-    text-align: center;
+    margin: 50px auto;
+    padding: 30px;
     border: 2px solid #ffffff;
+    text-align: center;
+    border-radius: 10px;
     box-sizing: border-box;
+}
+
+.formulario-flex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.formulario-flex input{
+    padding: 8px;
+    width: 80%;
+    border-radius: 5px;
+    border: none;
+}
+
+.formulario-flex button{
+    padding: 10px 30px;
+    cursor: pointer;
+    background-color: #2222;
+    color: #cda45e;
+    border: 1px solid #cda45e;
+    font-weight: bold;
 }
